@@ -1,0 +1,1687 @@
+{
+    "version": "1.0.15.67",
+    "windows": [
+        {
+          "type": "HID",
+          "reader": "AK910 HKey",
+          "drivers": "Actalisone.dll,bit4xpki.dll,bit4opki.dll,bit4ipki.dll,bit4tpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths.cpp": "Ceedo\\Windows\\System32,Main,ActalisOne\\FileProtector,Infocert,\\",
+		  "paths.java": "Ceedo/Windows/System32,Main,ActalisOne/FileProtector,Infocert",
+          "comment": "token ArubaKey; come da sua documentazione puo' contenere chip Oberthur (bit4opki.dll) o Incard (bit4ipki.dll)"
+        },
+        {
+          "type": "HID",
+          "reader": "DL-AK910 HKey",
+          "drivers": "Actalisone.dll,bit4xpki.dll,bit4opki.dll,bit4ipki.dll,bit4tpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths.cpp": "Ceedo\\Windows\\System32,Main,ActalisOne\\FileProtector,Infocert,\\",
+		  "paths.java": "Ceedo/Windows/System32,Main,ActalisOne/FileProtector,Infocert",
+          "comment": "token ArubaKey; come da sua documentazione puo' contenere chip Oberthur (bit4opki.dll) o Incard (bit4ipki.dll)"
+        },
+        {
+          "type": "HID",
+          "reader": "HID Bit4id Key4 XL",
+          "drivers": "bit4xpki.dll,bit4ipki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "Main",
+          "comment": "PKS-2442 token marchiato Aruba"
+        },
+        {
+          "type": "HID",
+          "reader": "HID Bit4id",
+          "drivers": "bit4opki.dll,bit4cpki.dll,incryptoki2.dll,bit4xpki.dll,bit4ipki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "idequalslabel": "true",
+          "paths": "Infocamere,InfoCert"
+        },
+        {
+          "type": "HID",
+          "reader": "VASCO DIGIPASS KEY 200",
+          "drivers": "VdsPkcs1132.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths.cpp": "FireFox\\VASCO",
+          "paths.java": "FireFox/VASCO"
+        },
+        {
+          "type": "HID",
+          "reader": "Safenet eTokenPRO HID",
+          "drivers": "eToken.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "idequalslabel": "true",
+          "paths.cpp": "%USERPROFILE%\\eToken32",
+          "paths.java": "%java.io.tmpdir%/eTokenPROAnywhere,%user.home%/eToken32,%user.home%/eToken64",
+          "comment": "SafeNet - eToken Pro Anywhere 5205"
+        },
+        {
+          "type": "HID",
+          "reader": "SNaclSlot",
+          "drivers": "eToken.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "idequalslabel": "true",
+          "paths.cpp": "%USERPROFILE%\\eToken32",
+          "paths.java": "%user.home%/eToken32,%user.home%/eToken64",
+          "comment": "SafeNet - eToken Pro Anywhere 5205"
+        },
+        {
+          "type": "HID",
+          "reader": "SafeNet Token JC",
+          "drivers": "eToken.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "idequalslabel": "true",
+          "paths.cpp": "%WINDIR%\\SysWOW64,%WINDIR%\\System32",
+          "paths.java": ""
+        },
+        {
+          "type": "HID",
+          "reader": "ETOKEN HID READER",
+          "drivers": "eToken.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "idequalslabel": "true",
+          "paths.cpp": "%WINDIR%\\SysWOW64,%WINDIR%\\System32",
+          "paths.java": ""
+        },
+        {
+          "type": "HID",
+          "reader": "BusinessKey HID",
+          "drivers": "stPKCS11.dll,bit4opki.dll,bit4cpki.dll,bit4ipki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "InfoCamere,InfoCert"
+        },
+        {
+          "type": "HID",
+          "reader": "Kobil mIDentity",
+          "drivers": "kpkcs11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths.cpp": "win32\\pkcs11",
+          "paths.java": "win32/pkcs11"
+        },
+        {
+          "type": "HID",
+          "reader": "HID AK910 HKey",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "Main"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD6180081B1807D1F038051006111308E",
+          "drivers": "asepkcs.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ASECard III (Athena)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD6180081B1807D1F038051006110308F",
+          "drivers": "asepkcs.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ASECard III (Athena)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB9600008131FE4556445349354001000400011F",
+          "drivers": "VdsPkcs1132.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "paths.cpp": "FireFox\\VASCO",
+          "paths.java": "FireFox/VASCO",
+          "comment": "VASCO DIGIPASS KEY 200"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB9600008131FE45564453493540010002000119",
+          "drivers": "VdsPkcs1132.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "VASCO DIGIPASS KEY 860 (Reader name: 'VASCO DIGIPASS KEY 860')"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B811F00CC52",
+          "drivers": "eTPKCS11.dll,asepkcs.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "eToken HS (Aladdin)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD5180081313A7D8073C8211030",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "eToken JC NG-Flash 72k (Aladdin). eToken 5110 FIPS - Reader: AKS ifdh CCID mode"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD518008131FE7D8073C82110F4",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "eToken PRO Anywhere. Reader: AKS ifdh CCID mode"
+        },
+        {
+          "type": "CCID",
+          "reader": "AKS",
+          "atr": "3BE200FFC11031FE55C8029C",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "eToken pro 16K and pro 32 (Alladin)"
+        },
+        {
+          "type": "CCID",
+          "reader": "AKS",
+          "atr": "3BF29800FFC11031FE55C80315",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "eToken pro 16K and pro 32 (Alladin)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF49800FFC11031FE554D346376B4",
+          "drivers": "cvp11_M4.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "(Siemens CryptoVision) and (Charismatics Smart Security Interface CardOS M4.01)"
+        },
+        {
+          "type": "CCID",
+          "reader": "AKS",
+          "atr": "3BF2180002C10A31FE58C80975",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "comment": "eToken marchiato Telecom (Aladdin) [AB:30.06.2010]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF2180002C10A31FE58C80975",
+          "drivers": "SSC_PKCS11.dll,SI_PKCS11.dll,cmP11.dll,siecap11.dll,pkcs11\\satapkcs11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "New Siemens card and Charismatics (eTPKCS11.dll, SI_PKCS11.dll), SATA HTS token (Siemens CardOS V4.2B) (Ottobre 2011) in realta' la dll (pkcs11\\satapkcs11.dll) e' un wrapper per le vere dll"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF2180002C10A31FE58C80874",
+          "drivers": "cmP11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Charismatics (Siemens CardOS V4.3B Chip SLE66CX642P) using cmP11.dll v4.7.1.1"
+        },
+        {
+          "type": "CCID",
+          "reader": "KOBIL mIDentity NonInstall",
+          "atr": "3BF2180002C10A31FE58C80874",
+          "drivers": "kpkcs11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "comment": "KOBIL mIDentity"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFC9800FFC11031FE55C803496E666F63616D65726528",
+          "drivers": "SI_PKCS11.dll,CardOS_PKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Siemens"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFC9800FFC11031FE55C804496E666F63616D6572652F",
+          "drivers": "SI_PKCS11.dll,CardOS_PKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Siemens"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF29800FFC11031FE55C80412",
+          "drivers": "SSC_PKCS11.dll,AtosSCAPIPKCS11.dll,SI_PKCS11.dll,CardOS_PKCS11.dll,ipmpkilc.dll,ipmpki32.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CardOS M4.01a (Siemens), Sysgillo (Incard), Eutron ITSEC, IT.Telecom (SSC_PKCS11.dll), Carta Ministero Difesa (ATOS versione 1, 1.5)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF29800FFC11031FE55C80315",
+          "drivers": "SI_PKCS11.dll,CardOS_PKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Card M4.01 CardOS M4.01 (Siemens) Notai, Actalis, EutronITSEC"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B25008053415201",
+          "drivers": "sadaptor.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Eutron"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B15008053415200",
+          "drivers": "sadaptor.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Eutron"
+        },
+        {
+          "type": "CCID",
+          "reader": "Eutron",
+          "atr": "3BB794008131FE6553504B32339000D1",
+          "drivers": "aetpkss1.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "comment": "Crypto Identity ITSEC-P (Eutron)"
+        },
+        {
+          "type": "CCID",
+          "reader": "Eutron",
+          "atr": "3BF4180002C10A31FE5856346376C5",
+          "drivers": "cmP11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths.cpp": "Ceedo\\Windows\\System32",
+          "paths.java": "Ceedo/Windows/System32",
+          "comment": "Siemens CardOS V4.3B, Crypto Identity ITSEC-I (Eutron - Green/Blue cover USB)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B6F00FF905353422D504B4353233131049000",
+          "drivers": "cryptoki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "AuthentIC SSB (Oberthur)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7F1800000031C0531DE2126452D90400829000",
+          "drivers": "IdentrusPkcs11.dll,AuthentIC_B2B_Pkcs11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "AuthentIC Identrus (Oberthur)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7F1800000031C0531DE2126452D90300819000",
+          "drivers": "IdentrusPkcs11.dll,AuthentIC_B2B_Pkcs11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "AuthentIC Identrus (Oberthur)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BE200FFC11031FE55C8029C",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CardOS M4, GemGATE - 32k, GPK16000, GPK8000 (Gemplus)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB9800FFC11031FE550064052047033180009000F3",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CardOS M4, GemGATE - 32k, GPK16000, GPK8000 (Gemplus) and eToken pro 16K (Aladdin)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BB794008131FE6553504B32339000D1",
+          "drivers": "ipmpkilc.dll,ipmpki32.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Sysgillo (Incard)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B9F94401E0067164346495345105266FF819000",
+          "drivers": "ipmpkilc.dll,ipmpki32.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Sysgillo (Incard)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B989440FFA503010101AD1310",
+          "drivers": "Belgium Identity Card PKCS11.dll",
+          "askpin": "false",
+          "tryreusedriver": "false",
+          "comment": "Belgium EID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B9894400AA503010101AD1310",
+          "drivers": "Belgium Identity Card PKCS11.dll",
+          "askpin": "false",
+          "tryreusedriver": "false",
+          "comment": "Belgium EID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B9813400AA503010101AD1311",
+          "drivers": "Belgium Identity Card PKCS11.dll",
+          "askpin": "false",
+          "tryreusedriver": "false",
+          "comment": "Belgium EID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B0F524E424F2454232D0B00A067452301",
+          "drivers": "eToken.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "USB token (Rainbow)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B04050100012101434E5310318059",
+          "drivers": "bit4opki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CNS:PDC (Oberthur - ICM=04,ICT=05)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B040501000112024850431031806C",
+          "drivers": "bit4opki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CNS:PDC (Oberthur - ICM=04,ICT=05)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1100FF81318055006802001010494E43525950544F001A",
+          "drivers": "ipmpki32.dll,bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS (ST/Incard)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BC4FF0000318000",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS ??"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF41100FF8131805500318000CE",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS ??"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB1100FF8131805500680200101044454D4F0019",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:DEMO ??"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB1100FF81318055006802001010534941450004",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:SIAE ??"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B0209020001010144534410318092",
+          "drivers": "bit4xpki.dll,bit4ipki.dll,bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "DSD (ST/Incard - ICM=02, ICT=09)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B0209030301010144534410318090",
+          "drivers": "bit4xpki.dll,bit4ipki.dll,bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:PDC (ST/Incard - ICM=02, ICT=09) preimo set di chiavi"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C8050102014850430031800A",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:HPC (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C80501020A485043003180",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:HPC (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C805011201485043003180",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:HPC (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C805011202485043003180",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:HPC (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C80501020A48504300318001",
+          "drivers": "sissp11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:HPC - SISS (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C80501120248504300318019",
+          "drivers": "sissp11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:HPC - SISS (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C80A010101434E5310318013",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:PDC ContactLess (Infineon/Siemens - ICM=05, ICT=08)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C805010201485043003180",
+          "drivers": "bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS (ST Incard) AB 14.05.2009: Forcing 'Reuse' flag to TRUE, the BusinessKey didn't lock on second access"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7B9400008065B08301017483009000",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "GXPPro with RSA512->1024 (GemSAFE)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7D96000080318065B0831148C883009000",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "GUMAR"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B04050700012101434E531031805F",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Qualcuno a cui piace la X"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B0405010001210143494510318048",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Actalis"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDB960080B1FE451F830031C064C30801000F90009B",
+          "drivers": "bit4xpki.dll,bit4opki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ArubaKey token (emessi da Giugno 2011)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090300011101434E531131808F",
+          "drivers": "bit4xpki.dll,bit4ipki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS : (ST/Incard) Ministero della Difesa / Corpo dei Carabinieri"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD21802C10A31FE58C80D51",
+          "drivers": "ssc_pkcs11.dll,bit4mpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Siemens CardOS M4.40 (slot=-1 flags=6), bit4mpki.dll (aka bit4p11.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF2180002C10A31FE58C80A76",
+          "drivers": "SI_PKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Carta Siemens emessa da Telecom"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091303011101434E531131809C",
+          "drivers": "inp11lib.dll,bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Firma certa (seriale 2201, 2205), carta Namirial (seriale 2201, 2444024 e 2205), seriale 2203 funziona solo con inp11lib (09/2016)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFA180002C10A31FE584B53776973735369676E89",
+          "drivers": "cvP11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "emessa dalle poste svizzere come postSuisseID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090303010101434E531031809D",
+          "drivers": "bit4xpki.dll,bit4ipki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "AK910 CKey (Aruba Key in modalita' CCID), Namirial (2444024, 70030035)[bit4ipki, bit4xpki]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B110507000112024850431031807F",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "carta Actalis (Aprile 2013)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B04050100011101434E5310318069",
+          "drivers": "bit4opki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS Actalis (Maggio 2013)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B11050700012101434E531031804A",
+          "drivers": "bit4opki.dll,bit4xpki.dll,bit4ipki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "serial": "{'7028':'bit4xpki.dll','74201065':'bit4ipki.dll'}",
+          "comment": "carta del Notariato (Notartel) (Maggio 2013)[bit4xpki.dll] / Namirial (2302, 2304)[bit4opki.dll,bit4xpki.dll], Infocert 7028 {bit4xpki.dll}, Infocert 74201065 {bit4ipki.dll}, Infocert Oberthur Cosmo ID ONE (7420059700166401) [bit4xpki.dll]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091301011101434E531131809E",
+          "drivers": "AtosSCAPIPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS - Ministero Difesa (Atos ver. 1, 1.5, 2)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091300011101434E531131809F",
+          "drivers": "inp11lib.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "05.03.2015 CNS - Ministero Grazia e Giustizia"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091303010101434E531031808D",
+          "drivers": "inp11lib.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "29.02.2016 CNS - Ministero Grazia e Giustizia"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDD18008131FE4580F9A000000077010800079000FE",
+          "drivers": "OCSCryptoki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Namirial (2301, 2401)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDD18008131FE4580F9A0000000770100700A90008B",
+          "drivers": "OCSCryptoki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Namirial (2301, 2401)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B8B80010031C0641F18010000900009",
+          "drivers": "OCSCryptoki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Namirial (2301, 2401)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFE9100FF918171FE400041200001F7C10031C0641F1801008A",
+          "drivers": "OCSCryptoki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Namirial (2301, 2401)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C80C011101434E5310318005",
+          "drivers": "cardos11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS Atos (CardOS API V3.3C)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B05051017012101434E531031805E",
+          "drivers": "bit4opki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "?? carta segnalata da SIA ??"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091403010101434E5310318075",
+          "drivers": "stPKCS11.dll,inp11lib.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll è presente in DikeUtil (Giugno 2016)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B42495434494420312E3000900091",
+          "drivers": "bit4opki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "BIT4ID 2444024000069837"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600008131804380318065B0850300EF120FFE82900066",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "SafeNet eToken 5110 CC"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF2180000C10A31FE55C80675",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "carta CRS Lombardia"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF81800FF8131FE454A434F507632343143",
+          "drivers": "aetpkss1.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "AET BV SafeSign"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDC18FF8191FE1FC38073C8211366010B0352000538",
+          "drivers": "asepkcs.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ID Protect (Athena)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF81800008031FE450073C8401300900092",
+          "drivers": "aetpkss1.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Electroninis.lt SafeSign IC (A.E.T. Europe BV)  [01/11/2019]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B05052000012101434E5310318079",
+          "drivers": "bit4opki.dll,bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS Regione Sardegna [01/03/2020](bit4opki.dll), DigitalDNAKey InfoCamere [25/05/2020](bit4opki.dll), InfoCert IDEMIA v2-T(T) seriale 702800 [08/01/2021] (bit4xpki.dll), Poste ID-ONE CNS v2 seriale ID80PI-0100000237 [02/02/2021] (bit4xpki.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B11050700012101434E531031805A",
+          "drivers": "icpkcs11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert WirelessKey 7028 (Oberthur Cosmo ID ONE)[18/05/2020]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090503010101434E5310318064",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "version" : "1.4",
+          "comment": "Infocert ? 2444101909003915 (Bit4Id JS2048) [18/09/2020]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B11050700011101434E531131807B",
+          "drivers": "AtosSCAPIPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Ministero Difesa [23/09/2020]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600008131FE55006B02090403010101434E53103180EB",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Aruba  [23/09/2020]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091504010101434E5310318073",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Namirial seriale 700000 [23/03/2021] (bit4xpki.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091617011101434E531131808D",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B8F8101626974346964756B6376746F6B656E39",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "DigitalDNAKey InfoCamere [12/10/2021](bit4xpki.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B020C0182011101434E53103180FC",
+          "drivers": "asepkcs.dll,bit4p11.dll,bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Athena CNS/SISS (aggiunta 06.03.2015), TS/CRS Bit4ID 2021 (bit4xpki)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B050520000112024850431031804C",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "TS/CRS Bit4ID [14/01/2022] (bit4xpki v 1.4.0.0)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B8E80018031806549544E5850120FFF8290F0",
+          "drivers": "CIEPKI.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Carta Identita Elettronica [09/02/2022] (ciepki.dll v 1.4.2.0)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091604010101434E5310318070",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert WirelessKey HUQE2 [22/03/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091614010101434E5310318060",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS JS2048(LB) 702800 (jSign3 ??) [17/08/2022] (bit4xpki.dll v 1.4.0.1040)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B0505200001F101434E53103180A9",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS/SST 609095 [08/11/2022] (bit4xpki.dll v 1.4.0.1040)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091717010101434E5310318062",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091717011101434E531131808C",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Regione Sardegna TS-CNS ST2021/ST2022 [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF00008131FE00006B000C0000010001434E5310318000",
+          "atrmask": "ffff00ffffffff00ffff00ff0000ff00ffffffffffffff00",
+          "drivers": "asepkcs.dll,bit4p11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Athena CNS, CRS Lombardia"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF00008131FE00006B000C000001000A48504310318000",
+          "atrmask": "ffff00ffffffff00ffff00ff0000ff00ffffffffffffff00",
+          "drivers": "asepkcs.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Athena CNS HPC"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF2180000C10A31FE55C80600",
+          "atrmask": "FFFFFFFF00FFFFFFFFFFFFFF00",
+          "drivers": "eTPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "eToken Card M4.20 (Aladdin)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7F1800000031C0739E010B6452D90400829000",
+          "atrmask": "FF0000FFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFF",
+          "drivers": "OCSCryptolib_P11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "AuthentIC v 203 and ID-One Bio (Cosmo v4.x) (Oberthur)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7B0000000031C06400E30000829000",
+          "atrmask": "FFFF00FFFFFFFFFFFF00FF00FFFFFFFF",
+          "drivers": "OCSCryptolib_P11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "ID-One Bio (Cosmo v5.x) and OCS Cosmo 64 RSA v5.x (Oberthur)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BA70040108065A209010052",
+          "atrmask": "FFFFFFFFF3FFFFFFFFFF00FF",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CardOS M4, GemGATE - 32k, GPK16000, GPK8000 (Gemplus) and eToken pro 16K (Aladdin)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BA70040108065A208010152",
+          "atrmask": "FFFFFFFFF3FFFFFFFFFF00FF",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CardOS M4, GemGATE - 32k, GPK16000, GPK8000 (Gemplus) and eToken pro 16K (Aladdin)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B7D00000080318065B08300000083009000",
+          "atrmask": "FFFF00FFFFFFFFFFFFFFFF000000FFFFFFFF",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Gemalto Classic TPC IS 32k, TPC IM 64k (Gemalto)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090200011101434E531031808F",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "bit4xpki.dll,bit4ipki.dll,bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:PDC (ST/Incard - ICM=02, ICT=09) primo set di chiavi"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090303011101434E531131808C",
+          "atrmask": "FFFFFFFFFFFFFF0000FFFFFFFFFFFFFF0FFFF00000F0FFFF00",
+          "drivers": "bit4xpki.dll,bit4ipki.dll,bit4cpki.dll,incryptoki2.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:PDC (ST/Incard - ICM=02, ICT=09) serie 7420 e 1205  - Touch and Sign con chiavi DS a 2048 bits, ArubaKey, Namirial (2444024, 2205, 7000003)[bit4ipki, bit4xpki]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C805011101434E531031800C",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "cnsPKCS11.dll,bit4xpki.dll,bit4ipki.dll,bit4cpki.dll,pkcs11.dll,incryptoki2.dll,bit4p11.dll,PKCS11.dll[*CMG*]",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:PDC (Infineon/Siemens - ICM=05, ICT=08) primo set di chiavi"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C8050102014850430031800A",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF00",
+          "drivers": "sissp11.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CNS:HPC - SISS (Infineon/Siemens - ICM=05, ICT=08) [info prese da sissP11.xml]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C80A011101434E5310318003",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "cnsPKCS11.dll,bit4xpki.dll,bit4ipki.dll,bit4cpki.dll,pkcs11.dll,incryptoki2.dll,bit4p11.dll,PKCS11.dll[*CMG*]",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS Siemens dal 2009 ( usata da Regione Lombardia)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B6D000080318065B08301029083009000",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFF000000FFFFFFFF",
+          "drivers": "gclib.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "Gemalto GemSAFE 1.11 (RSA512->2048)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF99800FFC11031FE55414D20434D4431313083",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFF00F0FFFFFFFFFFFFFF00",
+          "drivers": "PKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS di Siemens date al Ministero della Difesa"
+        },
+        {
+          "type": "CCID",
+          "atr": "3bff1800008131fe45006b11050700010001434e5300318000",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "bit4opki.dll,bit4xpki.dll,AtosSCAPIPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS prodotte da Oberthur + CMD2(ATOS)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B150C0182011202485043103180EE",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF00",
+          "drivers": "asepkcs.dll,bit4p11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Athena CNS/SISS HPC produzione"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B150C018201020A485043103180F6",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF00",
+          "drivers": "asepkcs.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Athena CNS/SISS HPC demo"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B020C0182011101434E53103180FC",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF00",
+          "drivers": "asepkcs.dll,bit4p11.dll,bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Athena CNS/SISS (aggiunta 06.03.2015), TS/CRS Bit4ID 2021 (bit4xpki)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600FF8131FE55006B02090403010101434E5310318014",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Token USB ArubaKey/Infocert 7420089600009658 in CCID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091403010101434E5310318065",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFF00FFFF00FFFFFFFF00FFFF00",
+          "drivers": "bit4xpki.dll,bit4ipki.dll,stPKCS11.dll,inp11lib.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS 7420034500051004 (STIncard) emessa da Camera di Commercio di Cremona; CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll è presente in DikeUtil (Giugno 2016)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B150C0181011101434E53103180E8",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFF00FF0000FFFFFFFFFFFF00",
+          "drivers": "asepkcs.dll,bit4p11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ASEKey CNS (Athena with bit4id token)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091614010101434E53103180FF",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091604010101434E53103180FF",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091603010101434E53103180FF",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091613010101434E53103180FF",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091717010101434E53103180FF",
+          "atrmask": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert jSign4 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+        }
+    ],
+    "linux": [
+        {
+          "type": "HID",
+          "reader": "HID Bit4id Key4",
+          "drivers": "libbit4ihpki.so",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "usr/lib"
+        },
+        {
+          "type": "HID",
+          "reader": "HID Bit4id Key4",
+          "drivers": "libbit4mpki.so",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "linux,linux64",
+          "comment": "Telecom Italia Firma sicura"
+
+        },
+        {
+          "type": "HID",
+          "reader": "DL-AK910 HKey",
+          "drivers": "libbit4xpki.so",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "media/disk/Main_lnx",
+          "comment": "ArubaKey HID"
+
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD6180081B1807D1F038051006111308E",
+          "drivers": "libasepkcs.so,libASEPKCS11.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ASECard III (Athena)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD6180081B1807D1F038051006110308F",
+          "drivers": "libasepkcs.so,libASEPKCS11.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ASECard III (Athena)"
+        },
+        {
+          "type": "CCID",
+		  "reader": "Eutron",
+          "atr": "3BB794008131FE6553504B32339000D1",
+          "drivers": "libaetpkss.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "ASECard III (Athena)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B989440FFA503010101AD1310",
+          "drivers": "Belgium-EID-pkcs11.so",
+          "askpin": "false",
+          "tryreusedriver": "false",
+          "comment": "Belgium EID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B9894400AA503010101AD1310",
+          "drivers": "Belgium-EID-pkcs11.so",
+          "askpin": "false",
+          "tryreusedriver": "false",
+          "comment": "Belgium EID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B9813400AA503010101AD1311",
+          "drivers": "Belgium-EID-pkcs11.so",
+          "askpin": "false",
+          "tryreusedriver": "false",
+          "comment": "Belgium EID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1100FF81318055006802001010494E43525950544F001A",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNR (ST/Incard)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BC4FF0000318000",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BF41100FF8131805500318000CE",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB1100FF8131805500680200101044454D4F0019",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFB1100FF81318055006802001010534941450004",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD5180081313A7D8073C8211030",
+          "drivers": "libeTPkcs11.so,libetpkcs11.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "eToken JC NG-Flash 72k (Aladdin). eToken 5110 FIPS - Reader: AKS ifdh CCID mode"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B05051017012101434E531031805E",
+          "drivers": "libbit4opki.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "carta segnalata da SIA"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600FF8131FE55006B02090403010101434E5310318014",
+          "drivers": "libbit4xpki.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Token USB Infocert 7420089600009658 in CCID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090403010101434E5310318065",
+          "drivers": "libbit4xpki.so,libbit4ipki.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS 7420034500051004 (STIncard) emessa da Camera di Commercio di Cremona"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091403010101434E5310318075",
+          "drivers": "libstpkcs11.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll e' presente in DikeUtil (Giugno 2016)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD518008131FE7D8073C82110F4",
+          "drivers": "libeTPkcs11.so,libetpkcs11.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "eToken PRO Anywhere. Reader: AKS ifdh CCID mode"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B0209020001010144534410318092",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "DSD (ST/Incard - ICM=02, ICT=09)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090303010101434E531031809D",
+          "drivers": "libbit4xpki.so,libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "AK910 CKey (Aruba Key in modalita' CCID), Namirial (2444024, 70030035)[bit4ipki, bit4xpki]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091617011101434E531131808D",
+          "drivers": "libstpkcs11.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B020C0182011101434E53103180FC",
+          "drivers": "libbit4xpki.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/usr/lib/bit4id/",
+          "comment": "TS/CRS Bit4ID 2021 (bit4xpki)"
+        },
+		{
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B05052000012101434E5310318079",
+          "drivers": "libbit4xpki.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Infocert IDEMIA 70000050 (/usr/lib/bit4id/libbit4xpki.so)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090200011101434E531031808F",
+          "atrmask": "FF0F00FFFF0FFF0000FFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "CNS:PDC (ST/Incard - ICM=02, ICT=09) primo set di chiavi"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090303011101434E531131808C",
+          "atrmask": "FF0F00FFFFFFFF0000FFFFFFFFFFFFFF0FFFF00000F0FFFF00",
+          "drivers": "libbit4xpki.so,libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:PDC (ST/Incard - ICM=02, ICT=09) serie 7420 e 1205  - Touch and Sign con chiavi DS a 2048 bits, ArubaKey, Namirial (2444024, 2205, 7000003)[bit4ipki, bit4xpki]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C805011101434E531031800C",
+          "atrmask": "FF0F00FFFF0F00FF0000FFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "Infocamere,InfoCert",
+          "comment": "CNS:PDC (Infineon/Siemens - ICM=05, ICT=08) primo set di chiavi"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FFC10A31FE55006B0508C8050102014850430031800A",
+          "atrmask": "FF0F00FFFF0F00FF0000FFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "libbit4ipki.so,libincryptoki2.so",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "comment": "CNS:HPC - SISS (Infineon/Siemens - ICM=05, ICT=08) [info prese da sissP11.xml]"
+        }
+	],
+    "osx": [
+         {
+          "type": "HID",
+          "reader": "Bit4id Key4",
+          "drivers": "libbit4hipki.dylib,libbit4ipki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "/Volumes/BUSINESSKEY/Mac/DikeXLite.app/Contents/Resources",
+          "comment": "BusinessKey Lite Infocert"
+        },
+        {
+          "type": "HID",
+          "reader": "Bit4id Key4",
+          "drivers": "libstpkcs11.dylib,libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "/Volumes/BUSINESSKEY/Configurazione/OSX/DikeBK/Dike.app/Contents/p11",
+          "comment": "BusinessKey Infocert con 1206"
+        },
+        {
+          "type": "HID",
+          "reader": "DL-AK910 HKey",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "/Volumes/ARUBAKEY/ArubaKey.app/Contents/Resources",
+          "comment": "ArubaKey HD"
+        },
+        {
+          "type": "HID",
+          "reader": "HID AK910 HKey",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "/Volumes/ARUBAKEY/ArubaKey.app/Contents/Resources",
+          "comment": "ArubaKey HD"
+        },
+        {
+          "type": "HID",
+          "reader": "HID Bit4id Key4",
+          "drivers": "libbit4mpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "/Volumes/Untitled/Firma4NG.app/Contents/Resources",
+          "comment": "Telecom Italia FirmaSicura"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091403010101434E5310318075",
+          "drivers": "libstpkcs11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
+          "comment": "BusinessKey Infocert 1206"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B04050700012101434E531031805F",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B150C0182011202485043103180EE",
+          "drivers": "libASEP11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Library/Application Support/Athena",
+          "comment": "Actalis ACS ACR 38U-CCID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD518008131FE7D8073C82110F4",
+          "drivers": "libeToken.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Library/Frameworks/eToken.framework/Versions/Current",
+          "comment": "eToken PRO Anywhere. Reader: AKS ifdh CCID mode"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BD5180081313A7D8073C8211030",
+          "drivers": "libeToken.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Library/Frameworks/eToken.framework/Versions/Current",
+          "comment": "eToken JC NG-Flash 72k (Aladdin). eToken 5110 FIPS - Reader: AKS ifdh CCID mode"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091303011101434E531131809C",
+          "drivers": "libSafeDiveP11.dylib,libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "",
+          "comment": "Carta Namirial con seriale 2203, 2204"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090303011101434E531131808C",
+          "drivers": "libbit4ipki.dylib,libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/%user.home%/Applications/DikeX.app/Contents/Resources,/Applications/DikeX.app/Contents/Resources,/Applications/Dike.app/Contents/p11,/usr/lib,/System/Library/bit4id/pkcs11,/Library/bit4id/pkcs11",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090303010101434E531031809D",
+          "drivers": "libSafeDiveP11.dylib,libbit4xpki.dylib,libbit4ipki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/%user.home%/Applications/DikeX.app/Contents/Resources,/Applications/DikeX.app/Contents/Resources,/Applications/Dike.app/Contents/p11,/usr/lib,/System/Library/bit4id/pkcs11,/Library/bit4id/pkcs11",
+          "comment": ""
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B05051017012101434E531031805E",
+          "drivers": "libbit4opki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "",
+          "comment": "?? carta segnalata da SIA ??"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600FF8131FE55006B02090403010101434E5310318014",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "",
+          "comment": "Token USB Infocert 7420089600009658 in CCID"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090403010101434E5310318065",
+          "drivers": "libbit4xpki.dylib,libbit4ipki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "",
+          "comment": "CNS 7420034500051004 (STIncard) emessa da Camera di Commercio di Cremona"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B11050700012101434E531031804A",
+          "drivers": "libbit4opki.dylib,libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/%user.home%/Applications/DikeX.app/Contents/Resources,/Applications/DikeX.app/Contents/Resources,/Applications/Dike.app/Contents/p11,/usr/lib,/System/Library/bit4id/pkcs11,/Library/bit4id/pkcs11,/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
+          "comment": "Carta del Notariato (Notartel) / Namirial (2302, 2304)[bit4opki,bit4xpki], Infocert Oberthur Cosmo ID ONE (7420059700166401) [libbit4xpki.dylib]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090503010101434E5310318064",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "",
+          "comment": "Token Namirial"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B11050700012101434E531031805A",
+          "drivers": "libicpkcs11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Applications/Dike.app/Contents/Resources,/Applications/Dike.app/Contents/p11,/usr/lib",
+          "comment": "InfoCert WirelessKey 7028 (Oberthur Cosmo ID ONE)[18/05/2020]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600008131FE55006B02090403010101434E53103180EB",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Aruba  [23/09/2020]"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091504010101434E5310318073",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Namirial seriale 700000 [23/03/2021] (bit4xpki.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02091617011101434E531131808D",
+          "drivers": "libstpkcs11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
+          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3B8F8101626974346964756B6376746F6B656E39",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Applications/Firma4ng.app/Contents/Resources/Firma4ng.app/Contents/Resources",
+          "comment": "DigitalDNAKey InfoCamere [12/10/2021](bit4xpki.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF9600008131804380318065B0850300EF120FFE82900066",
+          "drivers": "libeTPkcs11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "false",
+		  "paths": "/usr/local/lib",
+          "comment": "SafeNet eToken 5110 CC"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091604010101434E5310318070",
+          "drivers": "libstpkcs11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "InfoCert WirelessKey HUQE2 (jSign3 ??) [22/03/2022] (stPKCS11.dll v 1.4.10.598)"
+        },
+		{
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B05052000012101434E5310318079",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "/Library/bit4id/pkcs11",
+          "comment": "TS/CRS Bit4ID 2022 (bit4xpki)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B020C0182011101434E53103180FC",
+          "drivers": "libASEP11.dylib,libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Library/Application Support/Athena,/Library/bit4id/pkcs11",
+          "comment": "Athena CNS/SISS (aggiunta 06.03.2015), TS/CRS Bit4ID 2021 (bit4xpki)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02091614010101434E5310318060",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "paths": "/Library/bit4id/pkcs11",
+          "comment": "CNS 702800 [17/08/2022] (bit4xpki.dll v 1.4.0.1040)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800FF8131FE55006B02090200011101434E531031808F",
+          "atrmask": "FF0F00FFFF0FFF0000FFFFFFFFFFFFFF00FFFFFFFF00FFFF00",
+          "drivers": "libbit4ipki.dylib,libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "InfoCamere,InfoCert,/%user.home%/Applications/DikeX.app/Contents/Resources,/Applications/DikeX.app/Contents/Resources,/Applications/Dike.app/Contents/p11,/usr/lib",
+          "comment": "SmartCard CNS Infocert"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BDF18008131FE7D006B150C0180011101434E53103180E9",
+          "atrmask": "FFFF00FFFFFFFF00FFFF00FF0000FF00FFFFFFFFFFFFFF00",
+          "drivers": "libASEP11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Library/Application Support/Athena",
+          "comment": "Actalis ACS ACR 38U-CCID"
+        }
+
+	]
+}
