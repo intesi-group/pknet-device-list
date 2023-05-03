@@ -901,7 +901,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040)"
+          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040), InfoCert 1209 (bit4xpki.dll v 1.4.10.593)"
         },
         {
           "type": "CCID",
