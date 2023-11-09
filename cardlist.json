@@ -1,5 +1,5 @@
 {
-    "version": "1.0.15.68",
+    "version": "1.0.15.69",
     "windows": [
         {
           "type": "HID",
@@ -627,6 +627,7 @@
           "drivers": "bit4xpki.dll,bit4ipki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
+		      "filter": "{'serial':{'742005':'bit4ipki.dll'}}",
           "comment": "AK910 CKey (Aruba Key in modalita' CCID), Namirial (2444024, 70030035)[bit4ipki, bit4xpki]"
         },
         {
@@ -651,7 +652,7 @@
           "drivers": "bit4opki.dll,bit4xpki.dll,bit4ipki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-		  "serial": "{'7028':'bit4xpki.dll','74201065':'bit4ipki.dll'}",
+		      "filter": "{'serial':{'7028':'bit4xpki.dll','74201065':'bit4ipki.dll'}}",
           "comment": "carta del Notariato (Notartel) (Maggio 2013)[bit4xpki.dll] / Namirial (2302, 2304)[bit4opki.dll,bit4xpki.dll], Infocert 7028 {bit4xpki.dll}, Infocert 74201065 {bit4ipki.dll}, Infocert Oberthur Cosmo ID ONE (7420059700166401) [bit4xpki.dll]"
         },
         {
@@ -785,9 +786,10 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE45006B05052000012101434E5310318079",
-          "drivers": "AtosSCAPIPKCS11.dll,bit4opki.dll,bit4xpki.dll",
+          "drivers": "bit4opki.dll,bit4xpki.dll,AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
+          "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll'}}",
           "comment": "CNS Regione Sardegna [01/03/2020]{bit4opki.dll}, DigitalDNAKey InfoCamere [25/05/2020]{bit4opki.dll}, InfoCert IDEMIA v2-T(T) seriale 702800 [08/01/2021]{bit4xpki.dll}, Poste ID-ONE CNS v2 seriale ID80PI-0100000237 [02/02/2021]{bit4xpki.dll}, CMD-2/CMCC-2/ Modello ATe (chip IDEMIA CNS COSMO ID/ONE v9) [14/03/2023]{AtosSCAPIPKCS11.dll}"
         },
         {
@@ -813,7 +815,7 @@
           "drivers": "AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Ministero della Difesa CMD-2 / CMCC-2 / Modello ATe (chip Oberthur CNS COSMO ID/ONE v7) [23/09/2020]{AtosSCAPIPKCS11.dll}"
+          "comment": "Ministero della Difesa CMD-2 / CMCC-2 / Modello ATe(chip Oberthur CNS COSMO ID/ONE v7), seriale MMDEnnnnn  [23/09/2020]{AtosSCAPIPKCS11.dll}"
         },
         {
           "type": "CCID",
@@ -901,7 +903,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040), InfoCert 1209 (bit4xpki.dll v 1.4.10.593)"
+          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040)"
         },
         {
           "type": "CCID",
@@ -1073,6 +1075,7 @@
           "drivers": "bit4opki.dll,bit4xpki.dll,AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
+          "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll'}}",
           "comment": "CNS prodotte da Oberthur {bit4opki.dll}, CMD2(ATOS){AtosSCAPIPKCS11.dll}"
         },
         {
