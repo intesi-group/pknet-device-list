@@ -1,5 +1,5 @@
 {
-    "version": "1.0.16.2",
+    "version": "1.0.16.5",
     "windows": [
         {
           "type": "HID",
@@ -121,6 +121,16 @@
           "tryreusedriver": "false",
           "idequalslabel": "true",
           "paths": "Main"
+        },
+        {
+          "type": "HID",
+          "reader": "HID Bit4id Key4 0",
+          "drivers": "bit4mpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "Windows",
+          "comment": "label: Firma Sicura Telecom Italia"
         },
         {
           "type": "CCID",
@@ -627,7 +637,7 @@
           "drivers": "bit4xpki.dll,bit4ipki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-		      "filter": "{'serial':{'742005':'bit4ipki.dll'}}",
+          "filter": "{'serial':{'742005':'bit4ipki.dll'}}",
           "comment": "AK910 CKey (Aruba Key in modalita' CCID), Namirial (2444024, 70030035)[bit4ipki, bit4xpki]"
         },
         {
@@ -652,7 +662,7 @@
           "drivers": "bit4opki.dll,bit4xpki.dll,bit4ipki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-		      "filter": "{'serial':{'7028':'bit4xpki.dll','74201065':'bit4ipki.dll'}}",
+          "filter": "{'serial':{'7028':'bit4xpki.dll','74201065':'bit4ipki.dll'}}",
           "comment": "carta del Notariato (Notartel) (Maggio 2013)[bit4xpki.dll] / Namirial (2302, 2304)[bit4opki.dll,bit4xpki.dll], Infocert 7028 {bit4xpki.dll}, Infocert 74201065 {bit4ipki.dll}, Infocert Oberthur Cosmo ID ONE (7420059700166401) [bit4xpki.dll]"
         },
         {
@@ -900,9 +910,10 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE55006B02091717010101434E5310318062",
-          "drivers": "bit4xpki.dll, stPKCS11.dll",
+          "drivers": "bit4xpki.dll,stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
+		  "filter": "{'serial':{'120910':'stPKCS11.dll'}}",
           "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040), JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11.dll)"
         },
         {
@@ -920,6 +931,14 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "comment": "Bit4id TokenMe Evo 2 [31/01/2023] (bit4xpki.dll v.1.4.0.1058 / MW 1.4.10.707 )"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE45006B150C0302010101434E5310318061",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "DigitalDNAKey InfoCamere [13/11/2023](bit4xpki.dll v1.4.0.1138)"
         },
         {
           "type": "CCID",
