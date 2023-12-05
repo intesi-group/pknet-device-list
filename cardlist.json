@@ -1,5 +1,5 @@
 {
-    "version": "1.0.16.5",
+    "version": "1.0.16.6",
     "windows": [
         {
           "type": "HID",
@@ -131,6 +131,16 @@
           "idequalslabel": "true",
           "paths": "Windows",
           "comment": "label: Firma Sicura Telecom Italia"
+        },
+        {
+          "type": "HID",
+          "reader": "bit4id keyfour Lite 0",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "false",
+          "idequalslabel": "true",
+          "paths": "Windows",
+          "comment": "Token TI Trust (chip IDEMIA v2L)[05/12/2023]{bit4xpki.dll 1.4.0.844}"
         },
         {
           "type": "CCID",
@@ -799,8 +809,8 @@
           "drivers": "bit4opki.dll,bit4xpki.dll,AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll'}}",
-          "comment": "CNS Regione Sardegna [01/03/2020]{bit4opki.dll}, DigitalDNAKey InfoCamere [25/05/2020]{bit4opki.dll}, InfoCert IDEMIA v2-T(T) seriale 702800 [08/01/2021]{bit4xpki.dll}, Poste ID-ONE CNS v2 seriale ID80PI-0100000237 [02/02/2021]{bit4xpki.dll}, CMD-2/CMCC-2/ Modello ATe (chip IDEMIA CNS COSMO ID/ONE v9) [14/03/2023]{AtosSCAPIPKCS11.dll}"
+          "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll','24441':'bit4xpki.dll'}}",
+          "comment": "CNS Regione Sardegna [01/03/2020]{bit4opki.dll}, DigitalDNAKey InfoCamere [25/05/2020]{bit4opki.dll}, InfoCert IDEMIA v2-T(T) seriale 702800 [08/01/2021]{bit4xpki.dll}, Poste ID-ONE CNS v2 seriale ID80PI-0100000237 [02/02/2021]{bit4xpki.dll}, CMD-2/CMCC-2/ Modello ATe (chip IDEMIA CNS COSMO ID/ONE v9) [14/03/2023]{AtosSCAPIPKCS11.dll}, Token TI Trust (chip IDEMIA v2L)[05/12/2023]{bit4xpki.dll 1.4.0.844}"
         },
         {
           "type": "CCID",
