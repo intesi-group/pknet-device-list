@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.0",
+    "version": "1.0.17.1",
     "windows": [
         {
           "type": "HID",
@@ -956,7 +956,7 @@
           "drivers": "bit4opki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "[27/01/2024](bit4opki.dll v 1.4.10.647)"
+          "comment": "CNS IDEMIA v2-T(T) 9030000451840008 [27/01/2024](bit4opki.dll v 1.4.10.647)"
         },
         {
           "type": "CCID",
@@ -966,6 +966,14 @@
           "tryreusedriver": "true",
           "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki.dll)"
         },
+		{
+		  "type": "CCID",
+		  "atr": "3B9F958131FE9F00664653051000FF71DF0000000000EC",
+		  "drivers": "eps2003csp11.dll",
+		  "askpin": "true",
+		  "tryreusedriver": "true",
+		  "comment": "ePass2003"
+		},
         {
           "type": "CCID",
           "atr": "3BFF1800FF8131FE55006B02091717011101434E531131808C",
