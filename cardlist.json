@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.2",
+    "version": "1.0.17.3",
     "windows": [
         {
           "type": "HID",
@@ -964,7 +964,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki.dll)"
+          "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki.dll), INTESIGROUP CNS seriale 3030000322802008 [10/07/2024](bit4xpki)"
         },
 		{
 		  "type": "CCID",
@@ -974,6 +974,14 @@
 		  "tryreusedriver": "true",
 		  "comment": "ePass2003"
 		},
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090603010101434E5310318067",
+          "drivers": "stPKCS11.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024](stPKCS11 v3.11.0)"
+        },
         {
           "type": "CCID",
           "atr": "3BFF1800FF8131FE55006B02091717011101434E531131808C",
@@ -1760,6 +1768,15 @@
           "tryreusedriver": "true",
           "paths": "/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
           "comment": "JSafe ST Microelectronics 702800 [09/02/2024] (stPKCS11.dll)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090603010101434E5310318067",
+          "drivers": "libstpkcs11.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
+          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024]"
         },
         {
           "type": "CCID",
