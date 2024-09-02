@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.3",
+    "version": "1.0.17.4",
     "windows": [
         {
           "type": "HID",
@@ -867,7 +867,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "DigitalDNAKey InfoCamere [12/10/2021](bit4xpki.dll)"
+          "comment": "DigitalDNAKey InfoCamere 7420024300520282 [12/10/2021](bit4xpki.dll)"
         },
         {
           "type": "CCID",
@@ -981,6 +981,14 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024](stPKCS11 v3.11.0)"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090703010101434E5310318066",
+          "drivers": "bit4xpki.dll",
+          "askpin": "true",
+          "tryreusedriver": "true",
+          "comment": "post@cert 7430010021758051 [29/08/2024](bit4xpki)"
         },
         {
           "type": "CCID",
@@ -1696,7 +1704,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/Applications/Firma4ng.app/Contents/Resources/Firma4ng.app/Contents/Resources",
-          "comment": "DigitalDNAKey InfoCamere [12/10/2021](bit4xpki.dll)"
+          "comment": "DigitalDNAKey InfoCamere 7420024300520282 [12/10/2021](bit4xpki.dll)"
         },
         {
           "type": "CCID",
@@ -1767,7 +1775,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "paths": "/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
-          "comment": "JSafe ST Microelectronics 702800 [09/02/2024] (stPKCS11.dll)"
+          "comment": "JSafe ST Microelectronics 702800 [09/02/2024] (stPKCS11)"
         },
         {
           "type": "CCID",
@@ -1776,7 +1784,16 @@
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
-          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024]"
+          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024], 7430010020034934"
+        },
+        {
+          "type": "CCID",
+          "atr": "3BFF1800008131FE55006B02090703010101434E5310318066",
+          "drivers": "libbit4xpki.dylib",
+          "askpin": "true",
+          "tryreusedriver": "true",
+		  "paths": "/Applications/firmaOK.app/Contents/Resources/firmaOK.app/Contents/Resources",
+          "comment": "post@cert 7430010021758051 [29/08/2024](bit4xpki)"
         },
         {
           "type": "CCID",
