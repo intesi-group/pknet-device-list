@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.4",
+    "version": "1.0.17.5",
     "windows": [
         {
           "type": "HID",
@@ -977,10 +977,11 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE55006B02090603010101434E5310318067",
-          "drivers": "stPKCS11.dll",
+          "drivers": "bit4xpki.dll,stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024](stPKCS11 v3.11.0)"
+		  "filter": "{'serial':{'742008':'stPKCS11.dll','743001':'bit4xpki.dll'}}",
+          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024](stPKCS11 v3.11.0), Token USB 7430010020034934-7430010015910825 (bit4xpki)"
         },
         {
           "type": "CCID",
@@ -1780,11 +1781,12 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE55006B02090603010101434E5310318067",
-          "drivers": "libstpkcs11.dylib",
+          "drivers": "libbit4xpki.dylib,libstpkcs11.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
-          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024], 7430010020034934"
+		  "filter": "{'serial':{'742008':'stPKCS11.dll','743001':'bit4xpki.dll'}}",
+          "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024](stPKCS11 v3.11.0), Token USB 7430010020034934-7430010015910825 (bit4xpki)"
         },
         {
           "type": "CCID",
