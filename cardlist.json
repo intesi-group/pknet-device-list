@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.5",
+    "version": "1.0.17.6",
     "windows": [
         {
           "type": "HID",
@@ -10,7 +10,7 @@
           "idequalslabel": "true",
           "paths.cpp": "Ceedo\\Windows\\System32,Main,ActalisOne\\FileProtector,Infocert,\\",
 		  "paths.java": "Ceedo/Windows/System32,Main,ActalisOne/FileProtector,Infocert",
-          "comment": "token ArubaKey; come da sua documentazione puo' contenere chip Oberthur (bit4opki.dll) o Incard (bit4ipki.dll)"
+          "comment": "token ArubaKey; come da sua documentazione puo' contenere chip Oberthur (bit4opki) o Incard (bit4ipki)"
         },
         {
           "type": "HID",
@@ -21,7 +21,7 @@
           "idequalslabel": "true",
           "paths.cpp": "Ceedo\\Windows\\System32,Main,ActalisOne\\FileProtector,Infocert,\\",
 		  "paths.java": "Ceedo/Windows/System32,Main,ActalisOne/FileProtector,Infocert",
-          "comment": "token ArubaKey; come da sua documentazione puo' contenere chip Oberthur (bit4opki.dll) o Incard (bit4ipki.dll)"
+          "comment": "token ArubaKey; come da sua documentazione puo' contenere chip Oberthur (bit4opki) o Incard (bit4ipki)"
         },
         {
           "type": "HID",
@@ -140,7 +140,7 @@
           "tryreusedriver": "false",
           "idequalslabel": "true",
           "paths": "Windows",
-          "comment": "Token TI Trust (chip IDEMIA v2L)[05/12/2023]{bit4xpki.dll 1.4.0.844}"
+          "comment": "Token TI Trust (chip IDEMIA v2L)[05/12/2023](bit4xpki 1.4.0.844)"
         },
         {
           "type": "CCID",
@@ -242,7 +242,7 @@
           "drivers": "SSC_PKCS11.dll,SI_PKCS11.dll,cmP11.dll,siecap11.dll,pkcs11\\satapkcs11.dll",
           "askpin": "true",
           "tryreusedriver": "false",
-          "comment": "New Siemens card and Charismatics (eTPKCS11.dll, SI_PKCS11.dll), SATA HTS token (Siemens CardOS V4.2B) (Ottobre 2011) in realta' la dll (pkcs11\\satapkcs11.dll) e' un wrapper per le vere dll"
+          "comment": "New Siemens card and Charismatics (eTPKCS11, SI_PKCS11), SATA HTS token (Siemens CardOS V4.2B) (Ottobre 2011) in realta' la dll (pkcs11\\satapkcs11.dll) e' un wrapper per le vere dll"
         },
         {
           "type": "CCID",
@@ -250,7 +250,7 @@
           "drivers": "cmP11.dll",
           "askpin": "true",
           "tryreusedriver": "false",
-          "comment": "Charismatics (Siemens CardOS V4.3B Chip SLE66CX642P) using cmP11.dll v4.7.1.1"
+          "comment": "Charismatics (Siemens CardOS V4.3B Chip SLE66CX642P) (cmP11 v4.7.1.1)"
         },
         {
           "type": "CCID",
@@ -284,7 +284,7 @@
           "drivers": "SSC_PKCS11.dll,AtosSCAPIPKCS11.dll,SI_PKCS11.dll,CardOS_PKCS11.dll,ipmpkilc.dll,ipmpki32.dll",
           "askpin": "true",
           "tryreusedriver": "false",
-          "comment": "Siemens CardOS M4.01a {CardOS_PKCS11.dll}, Incard Sysgillo {SI_PKCS11.dll}, Eutron ITSEC, IT.Telecom {SSC_PKCS11.dll}, Carta Ministero Difesa (ATOS versione 1, 1.5){AtosSCAPIPKCS11.dll}"
+          "comment": "Siemens CardOS M4.01a (CardOS_PKCS11), Incard Sysgillo (SI_PKCS11), Eutron ITSEC, IT.Telecom (SSC_PKCS11), Carta Ministero Difesa (ATOS versione 1, 1.5)(AtosSCAPIPKCS11)"
         },
         {
           "type": "CCID",
@@ -292,7 +292,7 @@
           "drivers": "SI_PKCS11.dll,CardOS_PKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "false",
-          "comment": "Siemens CardOS M4.01 {CardOS_PKCS11.dll} Notai, Actalis, EutronITSEC"
+          "comment": "Siemens CardOS M4.01 (CardOS_PKCS11) Notai, Actalis, EutronITSEC"
         },
         {
           "type": "CCID",
@@ -673,7 +673,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "filter": "{'serial':{'7028':'bit4xpki.dll','74201065':'bit4ipki.dll'}}",
-          "comment": "carta del Notariato (Notartel) (Maggio 2013)[bit4xpki.dll] / Namirial (2302, 2304)[bit4opki.dll,bit4xpki.dll], Infocert 7028 {bit4xpki.dll}, Infocert 74201065 {bit4ipki.dll}, Infocert Oberthur Cosmo ID ONE (7420059700166401) [bit4xpki.dll]"
+          "comment": "carta del Notariato (Notartel) (Maggio 2013)[bit4xpki] / Namirial (2302, 2304)[bit4opki,bit4xpki], Infocert 7028 (bit4xpki), Infocert 74201065 (bit4ipki), Infocert Oberthur Cosmo ID ONE (7420059700166401) (bit4xpki)"
         },
         {
           "type": "CCID",
@@ -681,7 +681,7 @@
           "drivers": "AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CMD-2 / Modello ATe (chip ST-IncardT&S 2048 CNS) (Atos ver. 1, 1.5, 2){AtosSCAPIPKCS11.dll}"
+          "comment": "CMD-2 / Modello ATe (chip ST-IncardT&S 2048 CNS) (Atos ver. 1, 1.5, 2)(AtosSCAPIPKCS11)"
         },
         {
           "type": "CCID",
@@ -810,7 +810,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll','2444129':'C:/Program Files (x86)/Bit4id/Trust Signer Client/Main/bit4xpki.dll','24441':'bit4xpki.dll','008000':'bit4xpki.dll'}}",
-          "comment": "CNS Regione Sardegna [01/03/2020]{bit4opki.dll}, DigitalDNAKey InfoCamere [25/05/2020]{bit4opki.dll}, InfoCert IDEMIA v2-T(T) sn '702800' [08/01/2021]{bit4xpki.dll}, Poste ID-ONE CNS v2 sn '0080000100000237' [02/02/2021]{bit4xpki.dll}, Poste IDEMIA v2-T(T) sn '0080000100003579' [12/03/2021]{bit4xpki.dll}, CMD-2/CMCC-2/ Modello ATe (chip IDEMIA CNS COSMO ID/ONE v9) [14/03/2023]{AtosSCAPIPKCS11.dll}, Token TI Trust (chip IDEMIA v2L) sn '2444129000200656' [05/12/2023]{'C:/Program Files (x86)/Bit4id/Trust Signer Client/Main/bit4xpki.dll' 1.4.0.844}"
+          "comment": "CNS Regione Sardegna [01/03/2020](bit4opki), DigitalDNAKey InfoCamere [25/05/2020](bit4opki), InfoCert IDEMIA v2-T(T) sn '702800' [08/01/2021](bit4xpki), Poste ID-ONE CNS v2 sn '0080000100000237' [02/02/2021](bit4xpki), Poste IDEMIA v2-T(T) sn '0080000100003579' [12/03/2021](bit4xpki), CMD-2/CMCC-2/ Modello ATe (chip IDEMIA CNS COSMO ID/ONE v9) [14/03/2023](AtosSCAPIPKCS11), Token TI Trust (chip IDEMIA v2L) sn '2444129000200656' [05/12/2023]('C:/Program Files (x86)/Bit4id/Trust Signer Client/Main/bit4xpki.dll' 1.4.0.844), DigitalDNAKey IDEMIA COSMO9.1 7000005004584748 [25/10/2024] (bit4xpki 1.4.0.1146)"
         },
         {
           "type": "CCID",
@@ -835,7 +835,7 @@
           "drivers": "AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Ministero della Difesa CMD-2 / CMCC-2 / Modello ATe(chip Oberthur CNS COSMO ID/ONE v7), seriale MMDEnnnnn  [23/09/2020]{AtosSCAPIPKCS11.dll}"
+          "comment": "Ministero della Difesa CMD-2 / CMCC-2 / Modello ATe(chip Oberthur CNS COSMO ID/ONE v7), seriale MMDEnnnnn  [23/09/2020]{AtosSCAPIPKCS11}"
         },
         {
           "type": "CCID",
@@ -851,7 +851,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Namirial seriale 700000 [23/03/2021] (bit4xpki.dll)"
+          "comment": "Namirial seriale 700000 [23/03/2021] (bit4xpki)"
         },
         {
           "type": "CCID",
@@ -859,7 +859,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11.dll)"
+          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11)"
         },
         {
           "type": "CCID",
@@ -867,7 +867,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "DigitalDNAKey InfoCamere 7420024300520282 [12/10/2021](bit4xpki.dll)"
+          "comment": "DigitalDNAKey InfoCamere 7420024300520282 [12/10/2021](bit4xpki)"
         },
         {
           "type": "CCID",
@@ -883,7 +883,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "TS/CRS Bit4ID [14/01/2022] (bit4xpki v 1.4.0.0)"
+          "comment": "TS/CRS Bit4ID [14/01/2022] (bit4xpki 1.4.0.0)"
         },
         {
           "type": "CCID",
@@ -891,7 +891,7 @@
           "drivers": "CIEPKI.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Carta Identita Elettronica [09/02/2022] (ciepki.dll v 1.4.2.0)"
+          "comment": "Carta Identita Elettronica [09/02/2022] (ciepki 1.4.2.0)"
         },
         {
           "type": "CCID",
@@ -899,7 +899,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert WirelessKey HUQE2 [22/03/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert WirelessKey HUQE2 [22/03/2022] (stPKCS11 1.4.10.598)"
         },
         {
           "type": "CCID",
@@ -907,7 +907,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS JS2048(LB) 702800 (jSign3 ??) [17/08/2022] (bit4xpki.dll v 1.4.0.1040)"
+          "comment": "CNS JS2048(LB) 702800 (jSign3 ??) [17/08/2022] (bit4xpki 1.4.0.1040)"
         },
         {
           "type": "CCID",
@@ -915,7 +915,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS/SST 609095 [08/11/2022] (bit4xpki.dll v 1.4.0.1040)"
+          "comment": "CNS/SST 609095 [08/11/2022] (bit4xpki v 1.4.0.1040)"
         },
         {
           "type": "CCID",
@@ -924,7 +924,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
 		  "filter": "{'serial':{'120910':'stPKCS11.dll'}}",
-          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki.dll v 1.4.0.1040), JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11.dll)"
+          "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki 1.4.0.1040), JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11)"
         },
         {
           "type": "CCID",
@@ -932,7 +932,7 @@
           "drivers": "icpkcs11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert dispositivo virtuale per accesso loro credenziali remote [21/01/2023] (icpkcs11.dll)"
+          "comment": "InfoCert dispositivo virtuale per accesso loro credenziali remote [21/01/2023] (icpkcs11)"
         },
         {
           "type": "CCID",
@@ -940,7 +940,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Bit4id TokenMe Evo 2 [31/01/2023] (bit4xpki.dll v.1.4.0.1058 / MW 1.4.10.707 )"
+          "comment": "Bit4id TokenMe Evo 2 [31/01/2023] (bit4xpki v.1.4.0.1058 / MW 1.4.10.707 )"
         },
         {
           "type": "CCID",
@@ -948,7 +948,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "DigitalDNAKey InfoCamere [13/11/2023](bit4xpki.dll v1.4.0.1138)"
+          "comment": "DigitalDNAKey InfoCamere [13/11/2023](bit4xpki 1.4.0.1138), Namirial SecID P71 seriale 9090000000001059 [07/10/2024](bit4xpki)"
         },
         {
           "type": "CCID",
@@ -956,7 +956,7 @@
           "drivers": "bit4opki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS IDEMIA v2-T(T) 9030000451840008 [27/01/2024](bit4opki.dll v 1.4.10.647)"
+          "comment": "CNS IDEMIA v2-T(T) 9030000451840008 [27/01/2024](bit4opki 1.4.10.647)"
         },
         {
           "type": "CCID",
@@ -964,7 +964,7 @@
           "drivers": "bit4xpki.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki.dll), INTESIGROUP CNS seriale 3030000322802008 [10/07/2024](bit4xpki)"
+          "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki), INTESIGROUP CNS seriale 3030000322802008 [10/07/2024](bit4xpki)"
         },
 		{
 		  "type": "CCID",
@@ -998,7 +998,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Regione Sardegna TS-CNS ST2021/ST2022 [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "Regione Sardegna TS-CNS ST2021/ST2022 [27/09/2022] (stPKCS11 1.4.10.598)"
         },
         {
           "type": "CCID",
@@ -1146,7 +1146,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll'}}",
-          "comment": "CNS prodotte da Oberthur {bit4opki.dll}, CMD2(ATOS){AtosSCAPIPKCS11.dll}"
+          "comment": "CNS prodotte da Oberthur (bit4opki), CMD2(ATOS)(AtosSCAPIPKCS11)"
         },
         {
           "type": "CCID",
@@ -1209,7 +1209,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11 1.4.10.598)"
         },
         {
           "type": "CCID",
@@ -1218,7 +1218,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11 1.4.10.598)"
         },
         {
           "type": "CCID",
@@ -1227,7 +1227,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11 1.4.10.598)"
         },
         {
           "type": "CCID",
@@ -1236,7 +1236,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert jSign3 (Sogei TS-CNS) [27/09/2022] (stPKCS11 1.4.10.598)"
         },
         {
           "type": "CCID",
@@ -1245,7 +1245,7 @@
           "drivers": "stPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert jSign4 (Sogei TS-CNS) [27/09/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert jSign4 (Sogei TS-CNS) [27/09/2022] (stPKCS11 v 1.4.10.598)"
         }
     ],
     "linux": [
@@ -1407,7 +1407,7 @@
           "drivers": "libstpkcs11.so",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll e' presente in DikeUtil (Giugno 2016)"
+          "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11. e inp11lib e' presente in DikeUtil (Giugno 2016)"
         },
         {
           "type": "CCID",
@@ -1439,7 +1439,7 @@
           "drivers": "libstpkcs11.so",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11.dll)"
+          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11)"
         },
         {
           "type": "CCID",
@@ -1653,7 +1653,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/%user.home%/Applications/DikeX.app/Contents/Resources,/Applications/DikeX.app/Contents/Resources,/Applications/Dike.app/Contents/p11,/usr/lib,/System/Library/bit4id/pkcs11,/Library/bit4id/pkcs11,/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
-          "comment": "Carta del Notariato (Notartel) / Namirial (2302, 2304)[bit4opki,bit4xpki], Infocert Oberthur Cosmo ID ONE (7420059700166401) [libbit4xpki.dylib]"
+          "comment": "Carta del Notariato (Notartel) / Namirial (2302, 2304)[bit4opki,bit4xpki], Infocert Oberthur Cosmo ID ONE (7420059700166401) [bit4xpki]"
         },
         {
           "type": "CCID",
@@ -1687,7 +1687,7 @@
           "drivers": "libbit4xpki.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "Namirial seriale 700000 [23/03/2021] (bit4xpki.dll)"
+          "comment": "Namirial seriale 700000 [23/03/2021] (bit4xpki)"
         },
         {
           "type": "CCID",
@@ -1696,7 +1696,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
-          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11.dll)"
+          "comment": "CNS regione Sardegna [11/10/2021] (stPKCS11)"
         },
         {
           "type": "CCID",
@@ -1705,7 +1705,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/Applications/Firma4ng.app/Contents/Resources/Firma4ng.app/Contents/Resources",
-          "comment": "DigitalDNAKey InfoCamere 7420024300520282 [12/10/2021](bit4xpki.dll)"
+          "comment": "DigitalDNAKey InfoCamere 7420024300520282 [12/10/2021](bit4xpki)"
         },
         {
           "type": "CCID",
@@ -1722,7 +1722,7 @@
           "drivers": "libstpkcs11.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "InfoCert WirelessKey HUQE2 (jSign3 ??) [22/03/2022] (stPKCS11.dll v 1.4.10.598)"
+          "comment": "InfoCert WirelessKey HUQE2 (jSign3 ??) [22/03/2022] (stPKCS11 1.4.10.598)"
         },
 		{
           "type": "CCID",
@@ -1730,8 +1730,8 @@
           "drivers": "libbit4xpki.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
-          "paths": "/Library/bit4id/pkcs11",
-          "comment": "TS/CRS Bit4ID 2022 (bit4xpki)"
+          "paths": "/Library/bit4id/pkcs11,/Applications/Firma4ng.app/Contents/Resources",
+          "comment": "TS/CRS Bit4ID 2022 (bit4xpki), DigitalDNAKey IDEMIA COSMO9.1 7000005004584748 [25/10/2024](/Applications/Firma4ng.app/Contents/Resources/libbit4xpki.dylib)"
         },
         {
           "type": "CCID",
@@ -1749,7 +1749,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "paths": "/Library/bit4id/pkcs11",
-          "comment": "CNS 702800 [17/08/2022] (bit4xpki.dll v 1.4.0.1040)"
+          "comment": "CNS 702800 [17/08/2022] (bit4xpki 1.4.0.1040)"
         },
         {
           "type": "CCID",
@@ -1758,7 +1758,7 @@
           "askpin": "true",
           "tryreusedriver": "true",
           "paths": "/Library/bit4id/pkcs11",
-          "comment": "Bit4id TokenMe Evo 2 [31/01/2023] (bit4xpki.dll v.1.4.0.1058 / MW 1.4.10.707 )"
+          "comment": "Bit4id TokenMe Evo 2 [31/01/2023] (bit4xpki 1.4.0.1058 / MW 1.4.10.707 )"
         },
         {
           "type": "CCID",
