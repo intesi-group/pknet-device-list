@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.7",
+    "version": "1.0.17.8",
     "windows": [
         {
           "type": "HID",
@@ -809,8 +809,8 @@
           "drivers": "bit4opki.dll,bit4xpki.dll,AtosSCAPIPKCS11.dll",
           "askpin": "true",
           "tryreusedriver": "true",
-          "paths": "C:/Program Files (x86)/Bit4id/Trust Signer Client/Main/",
-          "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll','2444129':'C:/Program Files (x86)/Bit4id/Trust Signer Client/Main/bit4xpki.dll','24441':'bit4xpki.dll','008000':'bit4xpki.dll'}}",
+          "paths.java": "/Program Files (x86)/Bit4id/Trust Signer Client/Main/",
+          "filter": "{'serial':{'MMD':'AtosSCAPIPKCS11.dll','2444129':'bit4xpki.dll','24441':'bit4xpki.dll','008000':'bit4xpki.dll'}}",
           "comment": "CNS Regione Sardegna [01/03/2020](bit4opki), DigitalDNAKey InfoCamere [25/05/2020](bit4opki), InfoCert IDEMIA v2-T(T) sn '702800' [08/01/2021](bit4xpki), Poste ID-ONE CNS v2 sn '0080000100000237' [02/02/2021](bit4xpki), Poste IDEMIA v2-T(T) sn '0080000100003579' [12/03/2021](bit4xpki), CMD-2/CMCC-2/ Modello ATe (chip IDEMIA CNS COSMO ID/ONE v9) [14/03/2023](AtosSCAPIPKCS11), Token TI Trust (chip IDEMIA v2L) sn '2444129000200656' [05/12/2023]('C:/Program Files (x86)/Bit4id/Trust Signer Client/Main/bit4xpki.dll' 1.4.0.844), DigitalDNAKey IDEMIA COSMO9.1 7000005004584748 [25/10/2024] (bit4xpki 1.4.0.1146)"
         },
         {
