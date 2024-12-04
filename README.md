@@ -2,7 +2,7 @@
 PkNet Smartcard List
 
 1.0.17.8 : 
-- coretta gesione percorso diretto della libreria pkcs11
+- corretta gestione percorso diretto della libreria pkcs11
 
 1.0.17.6 : 
 - aggiunto nuovo percorso libreria per DigitalDNA per macOS
