@@ -1,6 +1,9 @@
 # pknet-device-list
 PkNet Smartcard List
 
+1.0.17.10 : 
+- aggiunto carta CybernEID '3BD518FF81B1FE451FC38073C821106F'
+
 1.0.17.8 : 
 - corretta gestione percorso diretto della libreria pkcs11
 
