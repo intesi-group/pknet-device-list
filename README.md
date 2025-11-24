@@ -1,6 +1,9 @@
 # pknet-device-list
 PkNet Smartcard List
 
+1.0.17.12 :
+- aggiunto carta CybernEID '3BDB18FF81B1FE451FC38073C8211065434E53107339'
+
 1.0.17.10 : 
 - aggiunto carta CybernEID '3BD518FF81B1FE451FC38073C821106F'
 
