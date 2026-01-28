@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.12",
+    "version": "1.0.17.14",
     "windows": [
     {
       "type": "HID",
@@ -750,10 +750,10 @@
     {
       "type": "CCID",
       "atr": "3BFF1800008131FE55006B02091403010101434E5310318075",
-      "drivers": "stPKCS11.dll,inp11lib.dll",
+      "drivers": "stPKCS11.dll,inp11lib.dll,bit4xpki.dll",
       "askpin": "true",
       "tryreusedriver": "true",
-      "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll è presente in DikeUtil (Giugno 2016)"
+      "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll è presente in DikeUtil (Giugno 2016) o SafeDive2023v5.0.0"
     },
     {
       "type": "CCID",
@@ -1208,7 +1208,7 @@
       "drivers": "bit4xpki.dll,bit4ipki.dll,stPKCS11.dll,inp11lib.dll",
       "askpin": "true",
       "tryreusedriver": "true",
-      "comment": "CNS 7420034500051004 (STIncard) emessa da Camera di Commercio di Cremona; CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll è presente in DikeUtil (Giugno 2016)"
+      "comment": "CNS 7420034500051004 (STIncard) emessa da Camera di Commercio di Cremona; CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11.dll e inp11lib.dll è presente in DikeUtil (Giugno 2016) o SafeDive2023v5.0.0"
     },
     {
       "type": "CCID",
@@ -1421,10 +1421,10 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE55006B02091403010101434E5310318075",
-          "drivers": "libstpkcs11.so",
+          "drivers": "libstpkcs11.so,libbit4xpki.so",
           "askpin": "true",
           "tryreusedriver": "true",
-          "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11. e inp11lib e' presente in DikeUtil (Giugno 2016)"
+          "comment": "CNS InfoCert 1206 (emissione 2016); La libreria stPKCS11. e inp11lib e' presente in DikeUtil (Giugno 2016) o SafeDive2023v5.0.0"
         },
         {
           "type": "CCID",
@@ -1592,7 +1592,7 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE55006B02091403010101434E5310318075",
-          "drivers": "libstpkcs11.dylib",
+          "drivers": "libstpkcs11.dylib,libbit4xpki.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
 		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
@@ -1813,11 +1813,12 @@
         {
           "type": "CCID",
           "atr": "3BFF1800008131FE55006B02091717010101434E5310318062",
-          "drivers": "libstpkcs11.dylib",
+          "drivers": "libbit4xpki.dylib,libstpkcs11.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
+		  "filter": "{'serial':{'120910':'libstpkcs11.dylib'}}",
           "paths": "/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
-          "comment": "JSafe ST Microelectronics 702800 [09/02/2024] (stPKCS11)"
+          "comment": "JSafe ST Microelectronics 7028000501438421 [09/02/2024] (bit4xpki)"
         },
         {
           "type": "CCID",
@@ -1825,8 +1826,8 @@
           "drivers": "libbit4xpki.dylib,libstpkcs11.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
-		  "paths": "/Applications/Dike.app/Contents/p11,/usr/lib",
-		  "filter": "{'serial':{'742008':'stPKCS11.dll','743001':'bit4xpki.dll'}}",
+		  "paths": "/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native,/Applications/Dike.app/Contents/p11,/usr/lib",
+		  "filter": "{'serial':{'742008':'libstpkcs11.dylib','743001':'libbit4xpki.dylib'}}",
           "comment": "Token USB Infocert 7420080840012867 JS (LS) in CCID [07/07/2024](stPKCS11 v3.11.0), Token USB 7430010020034934-7430010015910825 (bit4xpki)"
         },
         {
