@@ -1,6 +1,9 @@
 # pknet-device-list
 PkNet Smartcard List
 
+1.0.17.16 :
+- mappata nuova libreria per '3BFF1800008131FE55006B02091717010101434E5310318062'
+
 1.0.17.12 :
 - aggiunto carta CybernEID '3BDB18FF81B1FE451FC38073C8211065434E53107339'
 

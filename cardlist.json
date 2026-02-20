@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.15",
+    "version": "1.0.17.16",
     "windows": [
     {
       "type": "HID",
@@ -924,8 +924,8 @@
       "drivers": "bit4xpki.dll,stPKCS11.dll",
       "askpin": "true",
       "tryreusedriver": "true",
-      "filter": "{'serial':{'120910':'stPKCS11.dll'}}",
-      "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki 1.4.0.1040), JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11)"
+      "filter": "{'serial':{'120910':'stPKCS11.dll','7028000505':'stPKCS11.dll'}}",
+      "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki 1.4.0.1040), JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11), JSafe 7028000505592553 [20/02/2026] (stPKCS11)"
     },
     {
       "type": "CCID",
@@ -962,10 +962,11 @@
     {
       "type": "CCID",
       "atr": "3BFF1800008131FE45006B0505912001F101434E5310318038",
-      "drivers": "bit4xpki.dll",
+      "drivers": "bit4xpki.dll,AtosSCAPIPKCS11.dll",
       "askpin": "true",
       "tryreusedriver": "true",
-      "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki), INTESIGROUP CNS seriale 3030000322802008 [10/07/2024](bit4xpki)"
+      "filter": "{'serial':{'591200':'AtosSCAPIPKCS11.dll','MMD':'AtosSCAPIPKCS11.dll'}}",
+      "comment": "SOGEI IDEMIA v2-T(T) 7999111001355521 [13/02/2024](bit4xpki), INTESIGROUP CNS seriale 3030000322802008 [10/07/2024](bit4xpki), DIFESA Modello ATe - chip Oberthur v9.1 5912000927164109/MMDJ27164 [13/02/2026](AtosSCAPIPKCS11)"
     },
     {
       "type": "CCID",
@@ -1832,9 +1833,9 @@
           "drivers": "libbit4xpki.dylib,libstpkcs11.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
-		  "filter": "{'serial':{'120910':'libstpkcs11.dylib'}}",
+		  "filter": "{'serial':{'120910':'libstpkcs11.dylib','7028000505':'libstpkcs11.dylib'}}",
           "paths": "/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
-          "comment": "JSafe ST Microelectronics 7028000501438421 [09/02/2024] (bit4xpki)"
+          "comment": "JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11), JSafe ST Microelectronics 7028000501438421 [09/02/2024] (bit4xpki), JSafe 7028000505592553 [20/02/2026] (stPKCS11)"
         },
         {
           "type": "CCID",
