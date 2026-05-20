@@ -1,6 +1,9 @@
 # pknet-device-list
 PkNet Smartcard List
 
+1.0.17.18 :
+- aggiunto filtro per '3BFF1800008131FE45006B05052000012101434E5310318079' con seriale '591200'
+
 1.0.17.17 :
 - aggiunto filtro per '3BFF1800008131FE55006B02091717010101434E5310318062' con seriale '7028000502'
 
