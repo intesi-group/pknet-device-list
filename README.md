@@ -1,6 +1,9 @@
 # pknet-device-list
 PkNet Smartcard List
 
+1.0.17.20 :
+- aggiunto filtro per '3BFF1800008131FE55006B02091717010101434E5310318062' con seriale '7028000501'
+
 1.0.17.19 :
 - aggiunto percorso "/usr/local/lib/libcybermw.dylib" per macOS "hardening"
 

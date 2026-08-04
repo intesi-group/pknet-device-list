@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17.19",
+    "version": "1.0.17.20",
     "windows": [
     {
       "type": "HID",
@@ -924,7 +924,7 @@
       "drivers": "bit4xpki.dll,stPKCS11.dll",
       "askpin": "true",
       "tryreusedriver": "true",
-      "filter": "{'serial':{'120910':'stPKCS11.dll','7028000502':'stPKCS11.dll','7028000505':'stPKCS11.dll'}}",
+      "filter": "{'serial':{'120910':'stPKCS11.dll','7028000501':'stPKCS11.dll','7028000502':'stPKCS11.dll','7028000505':'stPKCS11.dll'}}",
       "comment": "JS2048(LB) 702800 into InfoCert Keyfour Lite [12/12/2022] (bit4xpki 1.4.0.1040), JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11), JSafe 7028000505592553 [20/02/2026] (stPKCS11), JSafe 7028000502923710 [04/05/2026] (stPKCS11)"
     },
     {
@@ -1833,7 +1833,7 @@
           "drivers": "libbit4xpki.dylib,libstpkcs11.dylib",
           "askpin": "true",
           "tryreusedriver": "true",
-		  "filter": "{'serial':{'120910':'libstpkcs11.dylib','7028000502':'libstpkcs11.dylib','7028000505':'libstpkcs11.dylib'}}",
+		  "filter": "{'serial':{'120910':'libstpkcs11.dylib','7028000501':'libstpkcs11.dylib','7028000502':'libstpkcs11.dylib','7028000505':'libstpkcs11.dylib'}}",
           "paths": "/Applications/GoSign-Desktop.app/Contents/Resources/app/node_modules/@ice/dike-core-js/node_modules/@ice/dike-core-osx/native",
           "comment": "JSafe ST Microelectronics 1209100000026095 [09/11/2023] (stPKCS11), JSafe ST Microelectronics 7028000501438421 [09/02/2024] (bit4xpki), JSafe 7028000505592553 [20/02/2026] (stPKCS11)"
         },
